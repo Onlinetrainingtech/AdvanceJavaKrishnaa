@@ -1,0 +1,12 @@
+create table Employee_address (Employee_e_id integer not null, e_city varchar(255), e_pincode integer not null, e_state varchar(255));
+
+create table employeeCollection (e_id integer not null, e_name varchar(255), primary key (e_id));
+
+create table hibernate_sequence (next_val bigint);
+insert into hibernate_sequence values ( 1 );
+
+alter table Employee_address add constraint FK9u5hcgrkn99563m0ie9gpq0yx foreign key (Employee_e_id) references employeeCollection (e_id);
+
+select * from employeedata;
+
+select * from employee_address;
