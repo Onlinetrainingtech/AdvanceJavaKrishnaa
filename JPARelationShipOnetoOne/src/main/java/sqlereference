@@ -1,0 +1,5 @@
+create table LibraryCard (id bigint not null auto_increment, cardNumber varchar(255), primary key (id));
+
+create table Student (id bigint not null auto_increment, name varchar(255), library_card_id bigint, primary key (id));
+
+alter table Student add constraint FKnv8pgnc32yi11p13bonhwqmvr foreign key (library_card_id) references LibraryCard (id);

@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.xyz</groupId>
-  <artifactId>JPARelationShipOnetoOne</artifactId>
+  <artifactId>JPARelationShipOnetoMany</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>JPARelationShipOnetoOne</name>
+  <name>JPARelationShipOnetoMany</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -25,7 +25,7 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <!-- JPA and Hibernate dependencies -->
+     <!-- JPA and Hibernate dependencies -->
     <dependency>
         <groupId>javax.persistence</groupId>
         <artifactId>javax.persistence-api</artifactId>

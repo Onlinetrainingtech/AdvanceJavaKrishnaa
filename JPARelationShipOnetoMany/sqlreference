@@ -1,0 +1,3 @@
+create table LibraryBook (id bigint not null auto_increment, title varchar(255), student_id bigint, primary key (id));
+
+alter table LibraryBook add constraint FKtqvn55dy9ghchv3qh341wwqqu foreign key (student_id) references Student (id);
