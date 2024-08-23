@@ -5,10 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
-		ApplicationContext cnt=new ClassPathXmlApplicationContext();
-		TextEditor txt=cnt.
+		ApplicationContext cnt=new ClassPathXmlApplicationContext("Beans.xml");
+		TextEditor txt=(TextEditor) cnt.getBean("textEditor");
+		txt.spellCheck();
 
 	}
 
